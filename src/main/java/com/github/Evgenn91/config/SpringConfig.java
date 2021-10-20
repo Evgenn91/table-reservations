@@ -14,12 +14,6 @@ import javax.sql.DataSource;
 @Configuration
 public class SpringConfig {
 
-
-    //это основная фишка спринга
-    //это синглтон и его мы можем ипользовать где захотим в нашем приложении
-    //так мы будем обьявлеть наши сервисы и наши дао
-
-
     @Bean
     public JdbcTemplate getJdbcTemplate(){
         return new JdbcTemplate(getDataSource());

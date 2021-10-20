@@ -11,7 +11,7 @@ import org.springframework.web.servlet.view.freemarker.FreeMarkerViewResolver;
 
 @Configuration
 @EnableWebMvc
-@ComponentScan(basePackages = "com.github.Evgenn91.controller") //сказали где лежат наши контроллеры
+@ComponentScan(basePackages = "com.github.Evgenn91.controller")
 public class WebConfig extends WebMvcConfigurerAdapter {
 
     @Bean
